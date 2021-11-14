@@ -1,0 +1,48 @@
+//Navbar
+
+.navbar{
+    @include media-breakpoint-down(md) {
+        border-bottom-left-radius: 30px;
+    }
+}
+
+.navbar-brand{
+    a{
+        background: url(../images/Logo-desktop.png) no-repeat;
+        width: 241px;
+        height: 32px;
+        background-size: cover;
+        display: block;
+        @include hide-text;
+        background-position: center center;
+
+        @include media-breakpoint-down(sm) {
+            background: url(../images/Logo-mobile.png) no-repeat;
+            width: 118px;
+            background-size: contain;
+        }
+    }
+}
+
+.navbar-toggler{
+    background-color: #A8B8A5;
+}
+
+.nav-link{
+    border-bottom: 2px solid transparent;
+    @include media-breakpoint-down(md) {
+        border-bottom: 1px solid #E5E5E5;
+    }
+    &:hover{
+        color: $tai_walk !important;
+        border-bottom: 2px solid #E0DA48;
+    }
+}
+
+.navbar-toggler-icon{
+    width: 1.2em;
+    height: 1.2em;
+    // &:hover{
+    //     background-image: url(../images/icon/close.svg);
+    // }
+}

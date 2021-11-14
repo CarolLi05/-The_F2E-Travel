@@ -1,0 +1,190 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container-fluid">
+  <div class="row my-10">
+    <div class="col-md-7">
+      <div class="d-flex flex-column">
+        <h2 class="display-6 fw-light text-center text-md-start mb-4">探索台灣之美<br>讓我們更親近這片土地</h2>
+        <p class="d-flex justify-content-center justify-content-md-start mb-9 mb-md-0">
+          <img src="../assets/images/Icon/spot24_Y.png" alt="icon-spot" class="">
+          台灣旅遊景點導覽 Taiwan Travel Guide
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column">
+        <form action="" method="post" id="search">
+          <div class="form-group mb-2">
+            <select name="select" id="select" class="form-control">
+              <option value="spot" id="spot">探索景點</option>
+              <option value="event" id="event">節慶活動</option>
+              <option value="food" id="food">品嚐美食</option>
+            </select>
+          </div>
+          <div class="form-group mb-2">
+            <input type="text" class="form-control" placeholder="你想去哪裡？請輸入關鍵字">
+          </div>
+          <button class="btn btn-primary w-100">
+            <img src="../assets/images/Icon/search30.png" alt="icon-search" class="">
+            搜尋
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="swiper main-swiper rounded-4 mb-6 mb-md-9">
+        <div class="swiper-wrapper text-center">
+          <div class="swiper-slide d-flex justify-content-center align-items-center bg-primary">新北市 | 不厭亭</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <div class="swiper-pagination text-end"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row recent-events mb-9">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="fw-light">近期活動</h2>
+      <a href="#" class="link-light-orange">查看更多活動</a>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="" alt="" class="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <p class="mb-1">2021/10/30</p>
+              <h3 class="h5 card-title">山城花語溫泉系列活動－寶來不老溫泉季</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="tetx-muted">
+                  <img src="../assets/images/Icon/spot16.png" alt="">
+                  南投縣
+                </span>
+                <a href="#" class="link-muted more-info">詳細介紹></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="" alt="" class="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <p class="mb-1">2021/10/30</p>
+              <h3 class="h5 card-title">2021</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="tetx-muted">
+                  <img src="../assets/images/Icon/spot16.png" alt="">
+                  南投縣
+                </span>
+                <a href="#" class="link-muted more-info">詳細介紹></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="" alt="" class="">
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <p class="mb-1">2021/10/30</p>
+              <h3 class="h5 card-title">2021</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="tetx-muted">
+                  <img src="../assets/images/Icon/spot16.png" alt="">
+                  南投縣
+                </span>
+                <a href="" class="link-muted more-info"> 詳細介紹></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-4"><img src="" alt="" class=""></div>
+          <div class="col-8">
+            <div class="card-body">
+              <p class="mb-1">2021/10/30</p>
+              <h3 class="h5 card-title">2021</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="tetx-muted">
+                  <img src="../assets/images/Icon/spot16.png" alt="">
+                  南投縣
+                </span>
+                <a href="" class="link-muted more-info">詳細介紹></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="fw-light">熱門打卡景點</h2>
+      <a href="#" class="link-light-orange">查看更多景點</a>
+    </div>
+    <div class="col-12">
+      <div class="swiper spot-swiper mb-6 mb-md-9">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex flex-column">
+            <img src="../assets/images/test.png" alt="spot-img" class="rounded-3 mb-2">
+            <h3 class="h5 mb-1 spot-title">高美濕地(高美野生動物園)</h3>
+            <span class="tetx-muted">
+              <img src="../assets/images/Icon/spot16.png" alt="">
+              南投縣
+            </span>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2 class="fw-light">一再回訪美食</h2>
+      <a href="#" class="link-light-orange">查看更多美食</a>
+    </div>
+    <div class="col-12">
+      <div class="swiper food-swiper mb-6 mb-md-9">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-flex flex-column">
+            <img src="../assets/images/test.png" alt="food-img" class="rounded-3 mb-2">
+            <h3 class="h5 mb-1 food-title">查看更多美食</h3>
+            <span class="tetx-muted">
+              <img src="../assets/images/Icon/spot16.png" alt="">
+              南投縣
+            </span>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
